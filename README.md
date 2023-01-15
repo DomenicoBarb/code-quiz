@@ -23,7 +23,7 @@ THEN I can save my initials and score
 ```
 
 ## Description:
-This is an online quiz app! You will have to answer a series of questions (with ONE correct answer each), you will have a limited amount of time to answer the questions and at the end of the quiz you score will be saved and added to a high score list! The timer will be displayed in the top right of your screen and a "view high scores" option will be on the top left.
+This is an online quiz app! You will have to answer a series of questions (with ONE correct answer each), you will have a limited amount of time to answer the questions and at the end of the quiz you score will be saved and added to a high score list! There will be a timer displayed on screen and a "view high scores" option.
 
 ## Screenshot:
 <!--![Screenshot](.assets/img/screenshot.jpg) -->
