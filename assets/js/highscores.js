@@ -1,6 +1,6 @@
 let highScoresText = document.querySelector("#high-scores");
 let highScoresTag = '';
-let highScoreData = '';
+let initialsText = document.querySelector("#initials");
 
 
 // High score list creattion
