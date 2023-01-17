@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My online quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- modified hyperlnk colour settings -->
+    <style>
+        a:link {
+           color: rgb(0, 189, 25);
+           background-color: transparent;
+        }
+        a:visited {
+           color: rgb(0, 189, 25);
+           background-color: transparent;
+        }
+        a:hover {
+           color: rgb(0, 156, 5);
+           background-color: transparent;
+           cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class=>
+    <!-- Top of screen title and view highscores location -->
+        <div class="title">Movie Trivia<a href="highscores.html" class="highscores float-end">View Highscores Here</a></div>
+    </header>
+    <main class="flex-container">
+        <div id="start" class="hide text-center">
+            <h1>Movie Trivia Time!</h1>
+            <button type="button" class="buttons" id="start-btn">Start!</button> 
+        </div>
+        <!-- initial screen -->
+        <div id="rules" class="info-box" style="width: auto" >
+        <div class="info-title">Trivia Rules!</div>
+            <div class="info-list">
+                <div class="info">You have <span>75 seconds</span> to finish the questions.</div>
+                <div class="info">The questions will be about movies!</div>
+                <div class="info">If you don't get all the right answers don't feel bad, most people won't! (I had to google them)</div>
+            </div>
+            <div class="buttons">
+                <button class="restart btn btn-primary btn-sm">Next</button>
+            </div>
+        </div>
+        <!-- Trivia Options screen -->
+        <section id="questions" class="hide row quiz-box" style="width: auto">
+            <div id="time-rem">
+                <span>Time Left: 75 second(s)</span>
+            </div>   
+            <h1 class="que-text">
+                <span></span>
+            </h1>
+            <div id="choices" class="option-text">
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+            </div>
+            <div id="response">
+                <span></span>
+            </div>
+        </section>
+        <!-- Highscore Submition Screen -->
+        <div id="quiz-end" class="hide text-center">
+            <div class="flex"><h1>All done!</h1>
+                <h3 class="score"></h3>
+                <h2>Enter Initials:</h2>
+                <input type="text" id="initials">
+                <button id="save-score">Submit</button>
+                <button id="clear-score">Clear Scores</button>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

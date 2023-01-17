@@ -5,18 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High Scores</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- modified hyperlink settings -->
+    <style>
+        a:link {
+           color: rgb(0, 189, 25);
+           background-color: transparent;
+        }
+        a:visited {
+           color: rgb(0, 189, 25);
+           background-color: transparent;
+        }
+        a:hover {
+           color: rgb(0, 156, 5);
+           background-color: transparent;
+           cursor: pointer;
+        }
+     </style>
 </head>
+
 <header class=>
-    <div class="title">My online quiz<a href="index.html" class="homepage float-end">Home</a></div>
+    <div class="title">My online quiz <button id="clear-score">Clear Scores</button>
+        <a href="index.html" class="homepage float-end">Back to Home</a></div>
 </header>
+
 <body>
-    <div id="rules" class="high-scores-box mt-5" style="width: auto" >
+    
+    <div id="rules" class="high-scores-box" style="width: auto" >
         <h1>High Scores:</h1>
         <div id="high-scores">
         
         </div>
     </div>
-<script src="assets/highscores.js"></script>
+<script src="./assets/js/highscores.js"></script>
+<script src="./assets/js/script2.js"></script>
 </body>
 </html>

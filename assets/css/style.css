@@ -1,0 +1,359 @@
+:root {
+    --green: rgb(0, 189, 25);
+    --darkgreen: rgb(0, 102, 3);
+    --Mainbg: rgb(255, 255, 255);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --body: rgb(73, 73, 73);
+    --lightgrey: rgb(182, 182, 182);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica; 
+}
+
+body {
+    background: var(--body);
+}
+
+.hide {
+    display: none;
+    justify-content: center;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--white);
+}
+
+.info-title { 
+    color: var(--black);
+}
+
+.que-text {
+    text-align: center;
+    max-width: 95vh;
+    min-width: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+#rules h1 {
+    text-align: center;
+    border-top: 3px solid var(--black);
+    margin-top: 10px;
+    padding-top: 15px;
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.info-box {
+    min-width: 75%;
+    max-width: 80%;
+    background: var(--Mainbg);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+}
+/* start screen list formatting */
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    min-width: 100%;
+}
+
+.flex-container {
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#choices {
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    min-width: 95vh;
+    font-size: 22px;
+}
+
+/* timer font/positioing */
+#time-rem {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+    color: red;
+    padding: 5px;
+}
+
+.info-box .info-title {
+    height: 60px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.info-box .info-list {
+    padding: 15px 35px;
+}
+
+.info-box .info-list .info {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-box .info-list .info span {
+    font-weight: 600;
+    color: rgb(255, 0, 0);   
+}
+
+#quiz-end {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 25px;
+    color: var(--white);
+}
+
+#quiz-end h1 {
+    text-align: center;
+    justify-content: center;
+}
+
+#quiz-end h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+#quiz-end h3 {
+    text-align: center;
+    justify-content: center;
+}
+
+
+.quiz-box {
+    width: 540px;
+    background: var(--Mainbg);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.que-text {
+    border-top: 3px solid rgb(0, 0, 0);
+    min-width: 450px;
+}
+
+#timeRem {
+    margin-top: 5;
+}
+
+#start-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    background-color: var(--green);
+    border-color: var(--black);
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 20px;
+}
+
+#start h1 {
+    padding: 15px;
+    color: var(--white);
+}
+
+#start-btn:hover {
+    background: var(--darkgreen);
+    cursor: pointer;
+    box-shadow: 3px 3px 5px var(--black);
+}
+
+.info-box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    border-top: 3px solid rgb(0, 0, 0);
+}
+
+.info-box .buttons button {
+    margin: 0 5px;
+    height: 50px;
+    width: 150px;
+    border: 3px solid var(--black);
+    background: var(--green);
+    border-radius: 20px;
+    color: var(--Mainbg);
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button.quit {
+    border-color: var(--green);
+    background-color: var(--Mainbg);
+    color: var(--green);
+}
+
+.buttons button.restart {
+    color: var(--Mainbg);
+    background: var(--green);
+}
+
+.buttons button.quit:hover {
+    background: var(--green);
+    color: var(--Mainbg);
+    box-shadow: 2px 2px 2px var(--lightgrey);
+}
+
+.buttons button.restart:hover {
+    background: var(--darkgreen);
+    color: var(--white);
+    box-shadow: 2px 2px 2px var(--lightgrey);
+}
+
+.question {
+    border-bottom: 3px solid var(--lightgrey);
+}
+
+
+.option {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: solid var(--black);
+    padding: 10px;
+    margin: 10px;
+    min-width: 75%;
+    max-width: 90%;
+    min-height: 50px;
+    max-height: 65px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.option:hover {
+    background: var(--darkgreen);
+    box-shadow: 2px 2px 2px var(--lightgrey);
+    cursor: pointer;
+}
+
+#initials {
+    align-self: center;
+    margin: 5px;
+    padding: 12px;
+    width: 85%;
+}
+
+#initials:hover {
+    box-shadow: 4px 4px 4px var(--black);
+}
+
+#response {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: o 25px;
+    font-size: 20px;
+    border-top: 3px solid var(--black);
+}
+
+#save-score {
+    align-self: center;
+    font-size: 25px;
+    margin: 5px;
+    min-width: 50%;
+    max-width: 505;
+    background-color: var(--green);
+    color: var(--white);
+    border-color: var(--black);
+    border-radius: 10px;
+}
+
+#save-score:hover {
+    box-shadow: 3px 3px 5px var(--black);
+    cursor: pointer;
+}
+
+#clear-score {
+    align-self: center;
+    font-size: 25px;
+    margin: 5px;
+    min-width: 50%;
+    background-color: var(--green);
+    color: var(--white);
+    border-color: var(--black);
+    border-radius: 10px;
+}
+
+#clear-score:hover {
+    box-shadow: 3px 3px 5px var(--black);
+    cursor: pointer;
+}
+
+.buttons {
+    justify-content: center;
+}
+
+.flex {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.flex h3 {
+    color: var(--green);
+}
+
+#high-scores {
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Some redundant lines exist, too scared to delete things at this point as it works as intended */
