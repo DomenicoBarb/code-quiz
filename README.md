@@ -29,4 +29,4 @@ This is an online quiz app! You will have to answer a series of questions (with 
 ![Screenshot](assets/img/screenshot.jpeg)
 
 # Link to deployed website:
-"placeholder"
+https://domenicobarb.github.io/code-quiz/
