@@ -253,9 +253,8 @@ body {
 }
 
 .question {
-    border-bottom: 3px solid var(--lightgrey);
+    border-bottom: 3px solid var(--black);
 }
-
 
 .option {
     display: flex;
@@ -394,5 +393,30 @@ body {
         justify-content: center;
         align-content: flex-start;
         max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #questions {
+        max-width: 75%;
+    }
+
+    .option {
+        padding: 5px;
+        margin: 5px;
+        min-width: 30%;
+        max-width: 30%;
+        min-height: 50px;
+        max-height: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+    .que-text {
+        font-size: 15px;
+        max-width: 50vh;
+        min-width: 25vh;
     }
 }
