@@ -189,6 +189,7 @@ body {
     border-color: var(--black);
     color: var(--white);
     font-weight: bold;
+    border-width: 3px;
     letter-spacing: 3px;
     border-radius: 20px;
 }
@@ -261,6 +262,7 @@ body {
     align-content: center;
     justify-content: center;
     border: solid var(--black);
+    border-width: 3px;
     padding: 10px;
     margin: 10px;
     min-width: 75%;
@@ -356,4 +358,41 @@ body {
     font-size: 20px;
 }
 
-/* Some redundant lines exist, too scared to delete things at this point as it works as intended */
+@media screen and (max-width: 500px) {
+    #questions {
+        align-content: center;
+        justify-content: center;
+        min-height: 200px;
+        max-width: 75vh;
+        font-size: 22px;
+    }
+
+    .option {
+        padding: 5px;
+        margin: 5px;
+        min-width: 50%;
+        max-width: 90%;
+        min-height: 50px;
+        max-height: 65px;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+    .que-text {
+        font-size: 20px;
+        max-width: 75vh;
+        min-width: 50vh;
+    }
+
+    /* Not sure why align-content center doesnt work, using flex start and margin left to align */
+    #choices {
+        margin-left: 10%;
+        max-width: 150px;
+        padding: 2px;
+        justify-content: center;
+        align-content: flex-start;
+        max-width: 400px;
+    }
+}

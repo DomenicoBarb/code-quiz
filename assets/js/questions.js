@@ -69,12 +69,12 @@ let questions = [
     {
         numb: 7,
         question : "What's the last word in this famous Toy Story quote: 'To infinity and ____!'",
-        answer: "' Beyond! '",
+        answer: "Beyond!",
         options: [
-            "' Forever! '",
-            "' To Tommorow! '",
-            "' Beyond! '",
-            "' More! '",
+            "Forever!",
+            "To Tommorow!",
+            "Beyond!",
+            "More!",
         ]
     },
     {
