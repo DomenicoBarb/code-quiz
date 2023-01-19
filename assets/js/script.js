@@ -1,4 +1,5 @@
-// Variablss
+// WIP JS
+// Variable location
 let startScreen = document.querySelector("#start");
 let startBtn = document.querySelector("#start-btn");
 let infoBox = document.querySelector(".info-box");
@@ -15,13 +16,13 @@ let queCount = 0;
 let counter = 75;
 let score = 0;
 
-// On click
+// On click continue button
 continueBtn.onclick = ()=> {
     infoBox.classList.add("hide");
     startScreen.classList.remove("hide");
 };
 
-// If start button is clicked
+// If start button is clicked function, start timer
 startBtn.onclick = () => {
     function countdown(){
         counter--;
@@ -39,7 +40,7 @@ startBtn.onclick = () => {
     showQuestions(queCount)
 };
 
-// Fetch questions and choices
+// Obtain questions/choices
 function showQuestions(index) {
     if (queCount>=10){
         return;
@@ -59,7 +60,7 @@ function showQuestions(index) {
     }
 }
 
-// Next question is answered
+// The next question is answered
 function optionSelected(answer) {
     if (queCount>=10){
         return;
@@ -92,7 +93,7 @@ function nextQuestion() {
     response.innerHTML = '<div id="response"><span></span></div>';
     }
 
-// Quiz ends when completed or timer ends
+// Quiz ends when completed AND/OR timer ends
 function quizEnd() {
     quizBox.classList.add("hide");
     endBox.classList.remove("hide");
@@ -100,7 +101,8 @@ function quizEnd() {
     let scoreTag = '<h3 class="score"> Your score was '+ score +' out of 10!</h3>';
     scoreText.innerHTML = scoreTag; 
 }
-// Initial submition for scores
+
+// Submition for scores
 submitBtn.onclick = () => {
     let initials = initialsText.value;
     //Store Initials and Score in Local Storage
@@ -112,7 +114,7 @@ submitBtn.onclick = () => {
     initialsText.value = ""
     location.reload();
 }
-
+// When clear scores is clicked local storage clears
 clearBtn.onclick = () => {
     // Clear local storage
     localStorage.clear();
